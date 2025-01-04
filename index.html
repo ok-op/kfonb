@@ -1,293 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="WOODcraft SudoR2spr" />
-    <meta name="keywords" content="WDzone, WDZONE, AI image" />
-    <meta name="description" content="WDZONE Website Service AI image Generate." />
-    <meta property="og:description" content="WDZONE Website Service AI image Generate.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="WOODcraft SudoR2spr" />
+    <meta name="keywords" content="WDzone, WDZONE, Terabox Player" />
+    <meta name="description" content="WDZONE Website Service Terabox Player." />
+    <meta property="og:description" content="WDZONE Website Service Terabox Player.">
     <meta charset='utf-8' content='text/html' http-equiv='content-type' />
-    <meta content='https://i.imgur.com/wfReBXJ.png' property='og:image' />
-    <link href='https://i.imgur.com/wfReBXJ.png' rel='shortcut icon' type='image/vnd.microsoft.icon' />
-    <link href='https://i.imgur.com/wfReBXJ.png' rel='apple-touch-icon' />
-    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/wfReBXJ.png">
-  <title>Ai Image Generator</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      background-color: #1a1a1a;
-      color: #f0f0f0;
-      margin: 0;
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #2c2c2c;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
-    h1 {
-      color: #0da12d;
-      margin-bottom: 25px;
-    }
-    .input-group {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-    input, select {
-      flex-grow: 1;
-      padding: 12px;
-      margin: 5px 0;
-      background-color: #3c3c3c;
-      border: 1px solid #555;
-      border-radius: 8px;
-      color: #f0f0f0;
-    }
-    .generate-button-container {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-    }
-    button {
-      padding: 12px 25px;
-      color: white;
-      background: #0da12d;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      text-align: center;
-    }
-    button:hover {
-      background: #114a1d;
-    }
-    img {
-      margin-top: 20px;
-      max-width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    #loader {
-      margin: 20px 0;
-      display: none;
-    }
-    .spinner {
-      border: 4px solid #555;
-      border-top: 4px solid #0da12d;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-      margin: 0 auto;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    .error {
-      color: #ff6b6b;
-      margin: 20px 0;
-    }
-    #customSizeGroup, #advancedOptions {
-      display: none;
-    }
-    .advanced-toggle {
-      display: flex;
-      justify-content: flex-start;
-      margin: 15px 0;
-    }
-    .checkbox-group {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin: 10px 0;
-    }
-    .advanced-option-btn {
-      background: #4a4a4a;
-      color: #f0f0f0;
-      align-self: flex-start;
-    }
-    .advanced-option-btn:hover {
-      background: #5a5a5a;
-    }
-  </style>
+    <meta content='https://i.imgur.com/1H9ZSvn.png' property='og:image' />
+    <link href='https://i.imgur.com/1H9ZSvn.png' rel='shortcut icon' type='image/vnd.microsoft.icon' />
+    <link href='https://i.imgur.com/1H9ZSvn.png' rel='apple-touch-icon' />
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/1H9ZSvn.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Terabox Player Page</title>
+	<link rel="stylesheet" href="woodcraft/style.css">
+	<link rel="stylesheet" href="woodcraft/box.css">
+	<link rel="stylesheet" href="woodcraft/index.css">
+   
 </head>
 <body>
-  <div class="container">
-    <h1>Image Generator</h1>
-    <p>WOODcraft</p>
-    <div class="input-group">
-      <input type="text" id="prompt" placeholder="Enter your image prompt" required>
-      <select id="model">
-        <option value="flux">flux</option>
-        <option value="flux-realism">flux-realism</option>
-        <option value="flux-cablyai">flux-cablyai</option>
-        <option value="flux-anime">flux-anime</option>
-        <option value="flux-3d">flux-3d</option>
-        <option value="any-dark">any-dark</option>
-        <option value="flux-pro">flux-pro</option>
-        <option value="turbo">turbo</option>
-      </select>
+    <div class="box">
+	    <div class="inner">
+		    <span>𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭</span>
+	    </div>
+	    <div class="inner">
+		    <span>𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭</span>
+	    </div>
     </div>
-    <div class="input-group">
-      <select id="resolution">
-        <option value="">Select Resolution</option>
-        <option value="512,512">512x512 (Default)</option>
-        <option value="1024,1024">1024x1024</option>
-        <option value="768,512">768x512 (Landscape)</option>
-        <option value="512,768">512x768 (Portrait)</option>
-        <option value="1280,720">1280x720 (720p)</option>
-        <option value="1920,1080">1920x1080 (1080p)</option>
-        <option value="custom">Custom Size</option>
-      </select>
+	
+	<br>
+	<img src="https://i.imgur.com/oBlKg4g.png" alt="Logo" style="width: 300px; height: 100px; display: block; margin-left: auto;  margin-right: auto; ">
+    <p class="subtitle">😏 Use and enjoy 😏</p>
+
+<div style="width: 100%; text-align: center;">
+    <a class="hover" href="terabox.html" target="_blank" style="text-decoration: none; "><b><i class="fa fa-code" aria-hidden="true"></i> Terabox Player</a>
+    <a class="hover" href="imege-generate.html" target="_blank" style="text-decoration: none; "><b><i class="fa fa-code" aria-hidden="true"></i> Ai imege Generate</a>
+    <a class="hover" href="ai-chat-bot.html" target="_blank" style="text-decoration: none; "><b><i class="fa fa-code" aria-hidden="true"></i> AI chat Gpt bot Companion</a>
+   	</div>
+</div>
+	<br>
+	
+<div class="image-container">
+    <img src="https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg" alt="Profile Image" class="profile-image">
+	</div>
     </div>
-    <div class="input-group" id="customSizeGroup">
-      <input type="number" id="width" placeholder="Width" min="64" max="2048">
-      <input type="number" id="height" placeholder="Height" min="64" max="2048">
-    </div>
-    
-    <div class="advanced-toggle">
-      <button type="button" class="advanced-option-btn" onclick="toggleAdvancedOptions()">Advanced Options</button>
-    </div>
-
-    <div id="advancedOptions">
-      <div class="input-group">
-        <input type="number" id="seed" placeholder="Seed (Optional)">
-      </div>
-      <div class="checkbox-group">
-        <label>
-          <input type="checkbox" id="nologo"> Remove Watermark
-        </label>
-        <label>
-          <input type="checkbox" id="private"> Private Mode
-        </label>
-        <label>
-          <input type="checkbox" id="enhance"> Enhance Image
-        </label>
-      </div>
-    </div>
-
-    <div class="generate-button-container">
-      <button onclick="generateImage()">Generate Image</button>
-    </div>
-    
-    <div id="loader">
-      <div class="spinner"></div>
-      <p>Generating your image...</p>
-    </div>
-    <div id="imageContainer"></div>
-  </div>
-
-  <script>
-    function toggleAdvancedOptions() {
-      const advancedOptions = document.getElementById('advancedOptions');
-      advancedOptions.style.display = advancedOptions.style.display === 'none' ? 'block' : 'none';
-    }
-
-    document.getElementById('resolution').addEventListener('change', function() {
-      const customSizeGroup = document.getElementById('customSizeGroup');
-      const widthInput = document.getElementById('width');
-      const heightInput = document.getElementById('height');
-      
-      if (this.value === 'custom') {
-        customSizeGroup.style.display = 'flex';
-        widthInput.required = true;
-        heightInput.required = true;
-        widthInput.value = '';
-        heightInput.value = '';
-      } else if (this.value) {
-        customSizeGroup.style.display = 'none';
-        widthInput.required = false;
-        heightInput.required = false;
-        
-        const [width, height] = this.value.split(',');
-        widthInput.value = width;
-        heightInput.value = height;
-      } else {
-        customSizeGroup.style.display = 'none';
-        widthInput.value = '';
-        heightInput.value = '';
-      }
-    });
-
-    function generateImage() {
-      const prompt = document.getElementById('prompt').value.trim();
-      const model = document.getElementById('model').value;
-      const resolution = document.getElementById('resolution').value;
-      const widthInput = document.getElementById('width');
-      const heightInput = document.getElementById('height');
-      const seedInput = document.getElementById('seed');
-      const nologo = document.getElementById('nologo').checked;
-      const privateMode = document.getElementById('private').checked;
-      const enhance = document.getElementById('enhance').checked;
-
-      if (!prompt) {
-        alert("Please enter a prompt!");
-        return;
-      }
-
-      let width, height;
-      if (resolution === 'custom') {
-        width = widthInput.value;
-        height = heightInput.value;
-        
-        if (!width || !height) {
-          alert("Please enter custom width and height!");
-          return;
-        }
-      } else if (resolution) {
-        [width, height] = resolution.split(',');
-      } else {
-        width = 512;
-        height = 512;
-      }
-
-      // Construct query parameters
-      const params = new URLSearchParams({
-        model: model,
-        width: width,
-        height: height
-      });
-
-      // Add optional parameters
-      if (seedInput.value) params.append('seed', seedInput.value);
-      if (nologo) params.append('nologo', '1');
-      if (privateMode) params.append('private', '1');
-      if (enhance) params.append('enhance', '1');
-
-      const apiUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?${params.toString()}`;
-      
-      const imageContainer = document.getElementById('imageContainer');
-      const loader = document.getElementById('loader');
-
-      imageContainer.innerHTML = "";
-      loader.style.display = "block";
-
-      const img = new Image();
-      img.src = apiUrl;
-
-      img.onload = function() {
-        loader.style.display = "none";
-        imageContainer.innerHTML = "";
-        imageContainer.appendChild(img);
-      };
-
-      img.onerror = function() {
-        loader.style.display = "none";
-        imageContainer.innerHTML = `
-          <p class="error">Failed to generate image. 
-          Please check your prompt and try again.</p>
-        `;
-      };
-    }
-  </script>
+</div>
+    <br>
+	<div class="footer">
+	  <img src="https://i.imgur.com/oFuKfaG.png" alt="Logo" style="width: 20px; height: 20px; ">
+	  <a href="https://t.me/Opleech_WD" target="_blank" style="text-decoration: none; color: white; ">Powered By 𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭</a>
+	  <p> © 2025 Terabox player. All rights reserved.</p><br>
+	</div>
 </body>
-  </html>
+</html>

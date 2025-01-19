@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Reel Downloader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Instagram Reel Downloader</h1>
+    </header>
+    <main>
+        <!-- Floating Text -->
+        <div class="floating-text">Hello</div>
+        <div class="floating-text">𝐀ɴɢᴇʟ 𝐎ᴘ 🦋</div>
+        <div class="floating-text">How are you</div>
+
+        <!-- Form Section -->
+        <form id="download-form">
+            <input type="text" id="reel-url" placeholder="Enter Instagram Reel URL" required>
+            <input type="submit" value="Download">
+        </form>
+        <div id="download-link"></div>
+    </main>
+    <footer>
+        <p>𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 ✿ 𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭</p>
+        <a href="https://t.me/Opleech_WD" target="_blank">Join Our Channel</a>
+    </footer>
+    <script>
+        document.getElementById('download-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const reelUrl = document.getElementById('reel-url').value;
+            fetch(`https://slimshadow-instagram-r-api.hf.space/download/?reel_url=${encodeURIComponent(reelUrl)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.download_link) {
+                        document.getElementById('download-link').innerHTML = 
+                            `<a href="${data.download_link}" target="_blank" class="button">Download Video</a>`;
+                    } else {
+                        document.getElementById('download-link').innerText = 'Error downloading video.';
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('download-link').innerText = 'An error occurred: ' + error.message;
+                });
+        });
+    </script>
+</body>
+</html>

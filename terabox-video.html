@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terabox Video generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/ae627849f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-800">
+  <main class="flex text-center justify-center mt-10">
+    <h2 class="absolute top-0 left-1 tracking-wide font-bold text-green-700">Prattle.com</h2>
+    <div class="border border-black bg-gray-900 text-white m-1 px-5 md:p-10 pt-5 pb-10 rounded w-[100%] md:w-[50%]">
+      <input type="text" id="input"
+        class="border border-gray-700 rounded outline-none w-[100%] mt-3 p-2 focus:border-green-500 bg-gray-800"
+        placeholder="Paste link here">
+      <button id="genbtn" type="submit" class="bg-green-800 px-5 py-3 rounded mt-5 mx-1"><i
+          class="fa-solid fa-link"></i> Generate Link</button>
+      <button id="openbtn" type="submit" class="bg-blue-700 px-5 py-3 rounded mt-2 md:mt-5"><i
+          class="fa-solid fa-earth-americas"></i> Open Link</button>
+          <p id="msg" class="text-start text-gray-400 absolute mt-2"></p>
+    </div>
+  </main>
+
+  <script>
+    let inputbox = document.querySelector('#input');
+    let genbtn = document.querySelector('#genbtn');
+    let openbtn = document.querySelector('#openbtn');
+    let msg = document.querySelector('#msg');
+    let openlink = "https://player.terabox.tech/?url=https%3A%2F%2Fteraboxapp.com%2Fs%2F";
+    let searchtext = ".com/s/";
+
+    let linkfunc = (text, search) => {
+      const a = text.indexOf(search);
+
+      if (a !== -1) {
+        return text.substring(a + search.length).trim();
+      }
+    }
+
+    genbtn.addEventListener("click", async() => {
+      if(inputbox.value.length >= 5) {
+      let codelink = await linkfunc(inputbox.value, searchtext);
+      inputbox.value = "";
+
+      msg.innerText = "Link Generated successfully !"
+      setTimeout(() => {
+        msg.innerText = "";
+      }, 2000);
+
+      openbtn.onclick = () => {
+      let link = openlink + codelink;
+      window.open(link, "_black");
+    }
+      }
+    })
+  </script>
+</body>
+
+</html>
